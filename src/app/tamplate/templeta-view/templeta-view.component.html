@@ -1,0 +1,30 @@
+<!-- <div style="display: flex;flex-direction: column; height: 100px;background-color: aqua;">
+    <div>
+        header
+    </div>
+    <div style="display: flex; flex-direction: row;">
+        <div style="width: 15%;background-color: aquamarine;height: 800px;">
+            menu
+        </div>
+        <div style="width: 85%;">
+            body
+        </div>
+    </div>
+</div> -->
+
+<div style="display: flex; flex-direction: column;">
+    <div style="height: 100px; background-color: blanchedalmond;">
+        <header></header>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+        <div style="width: 15%;background-color: aquamarine;height: 800px;">
+            <ul>
+                <li routerLink="home">Home</li>
+                <li routerLink="course">Course</li>
+            </ul>
+        </div>
+        <div style="width: 80%;background-color: azure;">
+            <router-outlet/>
+        </div>
+    </div>
+</div>

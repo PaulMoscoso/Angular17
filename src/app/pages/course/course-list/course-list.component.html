@@ -1,0 +1,12 @@
+<h2>List Course</h2>
+
+@for (course of courses; track $index) {
+    <div class="course">
+        {{course.name}} - {{course.description}} <a (click)="takeIndexCourse($index)">Edit</a> <br>
+    </div>
+}
+@empty {
+    <div class="course">
+        No hay cursos
+    </div>
+}
